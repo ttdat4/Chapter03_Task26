@@ -1,0 +1,44 @@
+.c-about {
+    display: flex;
+    justify-content: flex-start;
+
+    &__txt {
+        max-width: 492px;
+        width: 100%;
+        color: #fff;
+        padding: 22px 10px 0 60px;
+        margin-right: 48px;
+
+        &--01 {
+            line-height: 1.75;
+            letter-spacing: 0.023em;
+            margin-bottom: 28px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__img {
+        max-width: 540px;
+        width: 100%;
+
+        &--box {
+            position: relative;
+        }
+
+        &--box::before {
+            content: "";
+            border: 2px #fff solid;
+            max-width: 540px;
+            width: 100%;
+            height: 345px;
+            position: absolute;
+            top: 19px;
+            left: -20px;
+        }
+
+        &--01 {
+            margin-bottom: 45px;
+            display: block;
+        }
+    }
+}
