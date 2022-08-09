@@ -2,6 +2,13 @@
     display: flex;
     justify-content: flex-start;
 
+    @include sp {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 10px;
+    }
+
     &__txt {
         max-width: 492px;
         width: 100%;
@@ -9,11 +16,24 @@
         padding: 22px 10px 0 60px;
         margin-right: 48px;
 
+        @include sp {
+            max-width: 100%;
+            margin-right: 0;
+            padding: 0;
+        }
+
         &--01 {
             line-height: 1.75;
             letter-spacing: 0.023em;
             margin-bottom: 28px;
             font-size: 1.6rem;
+
+            @include sp {
+                font-size: 1.4rem;
+                line-height: 1.57;
+                margin-bottom: 22px;
+                letter-spacing: 0.02em;
+            }
         }
     }
 
@@ -21,8 +41,18 @@
         max-width: 540px;
         width: 100%;
 
+        @include sp {
+            max-width: 100%;
+            margin-bottom: 51px;
+            text-align: center;
+        }
+
         &--box {
             position: relative;
+
+            @include sp {
+                display: block;
+            }
         }
 
         &--box::before {
@@ -34,11 +64,22 @@
             position: absolute;
             top: 19px;
             left: -20px;
+
+            @include sp {
+                max-width: 98.8%;
+                height: 98%;
+                top: 10px;
+                left: -10px;
+            }
         }
 
         &--01 {
             margin-bottom: 45px;
             display: block;
+
+            @include sp {
+                margin-bottom: 29px;
+            }
         }
     }
 }

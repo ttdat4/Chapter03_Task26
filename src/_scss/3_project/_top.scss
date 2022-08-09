@@ -20,9 +20,20 @@ Css of home page
         top: 0;
         right: 23.3%;
         z-index: -1;
+
+        @include sp {
+            right: 10px;
+        }
     }
     //-------------------------------------------------------
     &2 {
+        padding-top: 94px;
+        position: relative;
+        overflow: hidden;
+
+        @include sp {
+            padding-top: 33px;
+        }
     }
     //-------------------------------------------------------
     &3 {

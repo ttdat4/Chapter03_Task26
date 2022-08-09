@@ -17,7 +17,15 @@ main {
 
 //-------------------------------------------------------
 .l-container {
-    max-width: 1080px;
+    max-width: 1020px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include sp {
+        width: 100%;
+    }
+
 }
 
 .l-headerwrap {
@@ -29,6 +37,19 @@ main {
     @include tab {
         flex-wrap: wrap;
         padding: 20px 20px 0;
+    }
+}
+
+.l-workwrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 0 10px;
     }
 }
 //-------------------------------------------------------
